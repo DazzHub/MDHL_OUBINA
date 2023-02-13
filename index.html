@@ -1,58 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="./assets/img/logo.ico"
-    />
-    <title>Mighty Ducks Hockey League</title>
-  </head>
-  <body>
-    <header>
-      <img src="./assets/img/logo.png" alt="Logo del sitio web" width="100" />
 
-      <h1>Mighty Ducks Hockey League</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/img/logo.ico">
+  <title>Mighty Ducks Hockey League</title>
 
-      <nav>
-        <a href="#">Home | </a>
-        <a href="./about_mdhl.html">About MDHL |</a>
-        <a href="./contact.html">Contact</a>
-      </nav>
-    </header>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
 
-    <main>
-      <aside>
-        <figure>
-          <img
-            src="./assets/img/hockey_1.jpg"
-            alt="Imagen de personas jugando al Hockey"
-            width="200"
-          />
-        </figure>
-      </aside>
+<body>
+  <header class="header_container">
+    <h1>Mighty Ducks Hockey League</h1>
 
-      <section>
-        <h2>Upcoming Events</h2>
+    <img src="./assets/img/design2_image1.jpg" alt="Banner del sitio web">
 
-        <article>
-          <h3>August 4</h3>
-          <p>MDSL Fundraiser</p>
-        </article>
+    <nav class="nav_container">
+      <a href="#" class="selected">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+  </header>
 
-        <article>
-          <h3>August 16</h3>
-          <p>Season Kick-off: Meet the Teams</p>
-        </article>
+  <main class="container">
+    <section class="section_home">
+      <h2>Upcoming Events</h2>
 
-        <article>
-          <h3>September 1</h3>
-          <p>First Game of the Season (Check Game Schedule for details)</p>
-        </article>
-      </section>
-    </main>
-  </body>
+      <div class="grid">
+        <aside class="section_aside">
+          <figure>
+            <img alt="Imagen del logo" src="./assets/img/logo.png" class="logo">
+          </figure>
+        </aside>
+
+        <div class="container_articles">
+          <article>
+            <h3>August 4</h3>
+            <p>MDSL Fundraiser</p>
+          </article>
+
+          <article>
+            <h3>August 16</h3>
+            <p>Season Kick-off: Meet the Teams</p>
+          </article>
+
+          <article>
+            <h3>September 1</h3>
+            <p>First Game of the Season (Check Game Schedule for details)</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="carousel">
+      <h2>Carrusel</h2>
+      <figure>
+        <img src="./assets/img/hockey_1.jpg" alt="Personas jugando hockey 1">
+      </figure>
+      <figure>
+        <img src="./assets/img/hockey_2.jpg" alt="Personas jugando hockey 2">
+      </figure>
+      <figure>
+        <img src="./assets/img/hockey_3.jpg" alt="Personas jugando hockey 3">
+      </figure>
+    </section>
+
+  </main>
+</body>
+
 </html>

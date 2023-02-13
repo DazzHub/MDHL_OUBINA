@@ -1,47 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="./assets/img/logo.ico"
-    />
-    <title>Mighty Ducks Hockey League</title>
-  </head>
-  <body>
-    <header>
-      <img src="./assets/img/logo.png" alt="Logo del sitio web" width="100" />
 
-      <h1>Mighty Ducks Hockey League</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/img/logo.ico">
+  <title>Mighty Ducks Hockey League</title>
 
-      <nav>
-        <a href="./index.html">Home | </a>
-        <a href="./about_mdhl.html">About MDHL |</a>
-        <a href="#">Contact</a>
-      </nav>
-    </header>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
 
-    <main>
-      <aside>
-        <figure>
-          <img
-            src="./assets/img/hockey_3.jpg"
-            alt="Imagen de personas jugando al Hockey"
-            width="200"
-          />
-        </figure>
-      </aside>
+<body>
+  <header class="header_container">
+    <h1>Mighty Ducks Hockey League</h1>
 
-      <div>
-        <p>
-          Please email us at
-          <a href="mailto:mdhl@chihockey.org">mdhl@chihockey.org</a>
-        </p>
-        <p>We reply to your email as soon as we can.</p>
+    <img src="./assets/img/design2_image1.jpg" alt="Banner del sitio web">
+
+    <nav class="nav_container">
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="#" class="selected">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="section_home">
+      <h2>Upcoming Events</h2>
+
+      <div class="grid">
+        <aside class="section_aside">
+          <figure>
+            <img src="./assets/img/logo.png" alt="Imagen del logo" class="logo">
+          </figure>
+        </aside>
+
+        <div class="container_articles">
+          <p>
+            Please email us at
+            <a href="mailto:mdhl@chihockey.org">mdhl@chihockey.org</a>
+          </p>
+          <p>We reply to your email as soon as we can.</p>
+        </div>
       </div>
-    </main>
-  </body>
+    </section>
+
+    <section class="carousel">
+      <h2>Carrusel</h2>
+      <figure>
+        <img src="./assets/img/hockey_1.jpg" alt="Personas jugando hockey 1">
+      </figure>
+      <figure>
+        <img src="./assets/img/hockey_2.jpg" alt="Personas jugando hockey 2">
+      </figure>
+      <figure>
+        <img src="./assets/img/hockey_3.jpg" alt="Personas jugando hockey 3">
+      </figure>
+    </section>
+  </main>
+</body>
+
 </html>
