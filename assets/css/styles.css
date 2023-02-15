@@ -142,7 +142,7 @@ body {
     justify-content: center;
 
     margin: auto;
-    padding-top: 1rem;
+    padding-top: 5rem;
 
     gap: 2rem;
 }
@@ -168,12 +168,10 @@ body {
 .cards .section_table img, .cards .card img{
     height: 4rem;
 }
-.cards .section_table h3, .cards .card h3{
+.cards .section_table h3, .cards .card h3, .cards .section_table p, .cards .card p{
     padding-top: 1rem;
 }
-.cards .section_table p, .cards .card p{
-    padding-top: 1rem;
-}
+
 
 .cards .section_table button, .cards .card button{
     padding: .6rem 1rem;
@@ -210,4 +208,27 @@ body {
 
 /* OTHERS */
 
+.rules {
+ max-width: 80%;
+ 
+}
 
+.rules_ol{
+    padding-bottom: 1rem;
+    
+}
+
+
+.rules_ol li p, .rules_ol li ol li p{
+    max-width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+.cards .rules p{
+    padding-top: 0;
+}
+
+.cards .rules h4{
+    padding-top: 1rem;
+}
