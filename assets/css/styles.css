@@ -232,3 +232,13 @@ body {
 .cards .rules h4{
     padding-top: 1rem;
 }
+
+.cards .gallery img {
+    min-width: 10rem;
+    min-height: 10rem;
+    
+}
+
+.flex-w {
+    flex-wrap: wrap;
+}
