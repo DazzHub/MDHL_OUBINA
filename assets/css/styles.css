@@ -208,6 +208,173 @@ body {
 }
 /* END CARDs */
 
-/* OTHERS */
+/* START FORM */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.label_flex {
+    display: flex;
+    
+    margin: auto;
+}
+
+fieldset {
+    border: none;
+}
+
+.submit {
+    width: 10rem;
+
+    text-align: center;
+    margin: auto;
+
+    padding: .5rem 2rem;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    border-radius: 1rem;
+    border: none;
+    
+    text-decoration: none;
+    font-weight: bold;
+
+    color: #EEEDEC;
+    background-color: #20907E;
+
+    transition: .5s ease-out;
+}
+
+.submit:hover{
+    color: #000;
+    background-color: #e4d761;
+}
+
+/* UN POCO DE TRAMPITA PARA DECORAR */
+/* PERDON PROFE :C */
+.grid_group {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+        "ig1 ig1"
+        "ig2 ig2"
+        "a d"
+        "b f"
+        "c g"
+    ;
+
+    justify-content: center;
+    text-align: center;
+}
+
+.grid_position {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "ig1 ig1"
+        "a b"
+        "c d"
+    ;
+    justify-content: center;
+    text-align: center;
+}
+
+.grid_uniform {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+        "ig1 ig1"
+        "a b"
+        "c d"
+        "f g"
+        "e e"        
+    ;
+    justify-content: center;
+    text-align: center;
+}
+
+.ignored_1{
+    grid-area: ig1;
+}
+
+.ignored_2{
+    grid-area: ig2;
+}
+
+.row_1, .row_2, .row_3 {
+    grid-area: a;
+}
+
+.row_2 {
+    grid-area: b;
+}
+
+.row_3 {
+    grid-area: c;
+}
+
+.row_4 {
+    grid-area: d;
+}
+
+.row_5 {
+    grid-area: f;
+}
+
+.row_6 {
+    grid-area: g;
+}
+
+.row_7 {
+    grid-area: e;
+}
+
+/* END FORM */
+
+@media (max-width: 600px) {
+    .grid_group {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas: 
+            "ig1"
+            "ig2"
+            "a"
+            "b"
+            "c"
+            "d"
+            "f"
+            "g";
+    }
+
+    .grid_position {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 
+        "ig1"
+        "a"
+        "b"
+        "c"
+        "d";
+    }
+
+    .grid_uniform {
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas: 
+            "ig1"
+            "a"
+            "b"
+            "c"
+            "d"
+            "f"
+            "g"
+            "e";
+    }
+}
 
 
