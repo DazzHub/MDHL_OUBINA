@@ -237,7 +237,7 @@ fieldset {
 
     border-radius: 1rem;
     border: none;
-    
+
     text-decoration: none;
     font-weight: bold;
 
@@ -336,6 +336,48 @@ fieldset {
 
 /* END FORM */
 
+/* MAPS */
+.section_game {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+}
+
+.maps {
+    display: flex;
+
+    height: 100%;
+    width: 100%;
+
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.maps, article {
+    padding: 1rem;
+    
+}
+
+.map_l{
+    display: flex;
+    flex-direction: column;
+}
+
+.map_r{
+    display: flex;
+    flex-direction: column;
+}
+
+.section_call {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+/* END MAPS*/
+
 @media (max-width: 600px) {
     .grid_group {
         grid-template-columns: auto;
@@ -374,6 +416,16 @@ fieldset {
             "f"
             "g"
             "e";
+    }
+
+    .maps {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1000px) {
+    .games {
+        flex-wrap: wrap;
     }
 }
 
